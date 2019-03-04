@@ -8,12 +8,35 @@
 </head>
 <body>
     <%= typeof msg != 'undefined' ? msg : '' %>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="imageFile">
-        <button type="submit" class="btn">Submit</button>
-    </form>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image1"><br>
+        <input type="file" name="image2"><br>
+        <input type="file" name="image3"><br>
+        <input type="file" name="image4"><br>
+        <input type="file" name="image5"><br>
+        <input type="file" name="image6"><br>
+        <input type="submit" name="submit" value="submit">
+      </form> 
 
     <br>
     <img src="<%= typeof file != 'undefined' ? file : '' %>" alt="">
 </body>
 </html> 
+
+<!-- single image upload -->
+<!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="imageFile">
+    <button type="submit"  class="btn">Submit</button>
+</form>
+ -->
+
+<!-- multi image upload -->
+<!-- <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image1"><br>
+    <input type="file" name="image2"><br>
+    <input type="file" name="image3"><br>
+    <input type="file" name="image4"><br>
+    <input type="file" name="image5"><br>
+    <input type="file" name="image6"><br>
+    <input type="submit" name="submit" value="submit">
+  </form>  -->
